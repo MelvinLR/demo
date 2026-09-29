@@ -1,0 +1,14 @@
+h2{
+    color: green;
+    
+}
+.Vanessa{
+    color: blue;
+}
+#foto{
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
