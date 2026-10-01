@@ -1,14 +1,36 @@
-h2{
-    color: green;
-    
+.grid{
+  display: grid;
+  grid-template-areas: "A A D D"
+                       "B C D D";
+  grid-template-rows: 100px 1fr 100px;
+  height: 700px;
 }
-.Vanessa{
-    color: blue;
+.itemA{
+     grid-area: A; background: blue
 }
-#foto{
-    float: right;
-    margin-left: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.itemB{
+     grid-area: B; background: green
+}
+.itemC{
+     grid-area: C; background: red
+}
+.itemD{
+     grid-area: D; background: yellow
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  background: grey;
+  width: 100px;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: grey;
+  width: 600px;
+  .itemFB .itemFC{
+    width: 50%;
+  }
 }
