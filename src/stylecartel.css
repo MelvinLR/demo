@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor principal del cartel */
+.poster {
+  width: 450px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Banner Rojo Extintor */
+.header-red {
+  background-color: #d31118;
+  width: 90%;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header-red h1 {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+/* Subtítulo */
+.subtitle {
+  color: #1a1a1a;
+  font-size: 19px;
+  font-weight: 800;
+  margin-top: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Sección Central (Clase A e Icono) */
+.class-a-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.triangle-container {
+  width: 75px;
+  height: 65px;
+}
+
+.triangle-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-box {
+  background-color: #0d2c72;
+  width: 100px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  padding: 8px;
+}
+
+.fire-icon-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.materials-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.materials-text strong {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.materials-text span {
+  font-weight: bold;
+}
+
+/* Sección Metodo para utilizarlo */
+.method-title {
+  color: #0d2c72;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.instructions-list {
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  color: #000000;
+}
+
+.instructions-list li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+/* Franjas de advertencia en la parte inferior */
+.bottom-stripes {
+  width: 100%;
+  height: 110px;
+  background: repeating-linear-gradient(
+    -60deg,
+    #ffffff,
+    #ffffff 40px,
+    #d31118 40px,
+    #d31118 90px
+  );
+  border-top: 2px solid #ffffff;
+}
